@@ -1,0 +1,96 @@
+body{
+    background-color: rgba(245, 245, 245, 0.386);
+    color:rgb(11, 7, 1);
+    line-height: 1.6;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+header{
+    background-color: rgba(47, 81, 167, 0.484);
+    color: rgb(241, 240, 243);
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;    
+   
+}
+
+nav a {
+    color: rgb(241, 240, 243);
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: rgb(47, 81, 167);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: brown;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+h1,h2{
+    color: rgb(47, 81, 167, 0.484);
+
+}
+
+h1{
+    border-bottom : 2px solid brown;
+    width:fit-content;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+main{
+    margin: 2rem;
+    padding: 1rem;
+    max-width:1100px;
+
+}
+
+.about-container,
+.sills-container,
+.projects-container,
+.education-container{
+    background-color:cyan;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(47, 81, 167, 0.484);
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+}
